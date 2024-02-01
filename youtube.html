@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<head> 
+  <title>YouTube Clone</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;900&family=Roboto:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles/general.css">
+      <link rel="stylesheet" href="styles/header.css">
+      <link rel="stylesheet" href="styles/video.css">
+      <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+
+<body>
+  <header class="header">
+   
+    <div class="left-section">
+      <img class="hamburger-icon" 
+           src="icons/hamburger-menu.svg">
+      <img class="youtube-icon"
+           src="icons/youtube-logo.svg">  
+    </div>
+    
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+
+      <button class="search-button">
+        <img class="search-icon"
+        src="icons/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      
+      <!--
+        Put position absolute inside position relative
+      -->
+      
+      <button class="microphone-button">
+        <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    
+    </div>
+
+
+    <div class="right-section">
+      
+      <div class="upload-icon-container">
+        <img class="camera-icon"
+        src="icons/upload.svg">
+        <div class="tooltip">Create</div>
+      </div>
+     
+     
+
+      <div class="youtube-app-container">
+        <img class="youtube-app-icon"
+        src="icons/youtube-apps.svg">  
+        <div class="tooltip">Youtube app</div>      
+      </div>
+
+
+      <div class="notifications-icon-container">
+        <img class="bell-icon"
+        src="icons/notifications.svg">
+        <div class="tooltip">Notifications</div> 
+        <div class="notifications-count">3</div>
+      </div>
+
+      
+
+      <img class="current-user-icon"
+      src="channel-pictures/my-icon.jpg">    
+    </div>
+  </header>
+ 
+
+  <nav class="sidebar">
+
+    <div class="sidebar-link">
+      <img src="icons/home.svg">
+      <div>Home</div>
+    </div>
+    
+    <div class="sidebar-link">
+      <img src="icons/explore.svg">
+      <div>Explore</div>
+    </div>
+    
+    <div class="sidebar-link">
+      <img src="icons/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    
+    <div class="sidebar-link">
+      <img src="icons/originals.svg">
+      <div>Originals</div>
+    </div>
+
+    <div class="sidebar-link">
+      <img src="icons/youtube-music.svg">
+      <div>YouTube Music</div>
+    </div>
+
+    <div class="sidebar-link">
+      <img src="icons/library.svg">
+      <div>Library</div>
+    </div>
+  </nav>
+  
+ 
+<main>
+  <section class="video-grid">
+    <div class="video-preview">
+      <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/jamiyat.jpg">  
+          <div class="video-time">14:20</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pictures">
+          <img class="profile-picture" 
+          src="channel-pictures/ozodlik-icon.jpg"> 
+        </div>
+        <div class="video-info">
+            <p class="video-title">OzodNazar: BMT minbaridagi nutq; Suriyadan qaytganlar taqdiri; 
+                Tarbiyachi emas jurnalistika
+            </p>
+            
+            <p class="video-author">Ozodlik Radiosi    
+            </p>
+            
+            <p class="video-stats">
+            137K views &#183; 2 months ago
+            </p>
+        </div>       
+      </div>      
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/mock-interview.jpg">   
+          <div class="video-time">14:20</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pictures">
+          <img class="profile-picture" 
+          src="channel-pictures/job-int-icon.jpg"> 
+        </div>
+        <div class="video-info">
+            <p class="video-title">Software Engineering Job Interview – Full Mock Interview
+            </p>
+            
+            <p class="video-author">freeCodeCamp.org     
+            </p>
+            
+            <p class="video-stats">
+              1.8M views &#183; 9 months ago
+            </p>
+        </div>       
+      </div>      
+    </div>
+
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/avaz-konsert.jpg">  
+          <div class="video-time">14:20</div>  
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pictures">
+          <img class="profile-picture" 
+          src="channel-pictures/avazohun.jpg"> 
+        </div>
+        <div class="video-info">
+            <p class="video-title">Avaz Oxun - Kulgiterapiya nomli konsert dasturi 2022
+            </p>
+            
+            <p class="video-author">YangiKulgu Official    
+            </p>
+            
+            <p class="video-stats">
+            10M views &#183; 3 weeks ago
+            </p>
+        </div>       
+      </div>      
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/supersimpledev.jpg">   
+          <div class="video-time">14:20</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pictures">
+          <img class="profile-picture" 
+          src="channel-pictures/s-s-dev.jpg"> 
+        </div>
+        <div class="video-info">
+            <p class="video-title">JavaScript Full Course (2023) - Beginner to Pro - Part 1
+            </p>
+            
+            <p class="video-author">SuperSimpleDev     
+            </p>
+            
+            <p class="video-stats">
+              1.3M views &#183; 4 months ago
+            </p>
+        </div>       
+      </div>      
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/sevimli-t.webp">  
+          <div class="video-time">14:20</div>  
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pictures">
+          <img class="profile-picture" 
+          src="channel-pictures/sevimli-tv.jpg"> 
+        </div>
+        <div class="video-info">
+            <p class="video-title">TAQDIRLAR - TIKUVCHINING HAQI YEB QIZIMNI BAXTSIZ QILDIM
+            </p>
+            
+            <p class="video-author">Sevimli TV  
+            </p>
+            
+            <p class="video-stats">
+            137K views &#183; 2 months ago
+            </p>
+        </div>       
+      </div>      
+    </div>
+
+    <div class="video-preview">
+      <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/puthon.webp">   
+          <div class="video-time">14:20</div> 
+      </div>
+      <div class="video-info-grid">
+        <div class="channel-pictures">
+          <img class="profile-picture" 
+          src="channel-pictures/python-icon.jpg"> 
+        </div>
+        <div class="video-info">
+            <p class="video-title">Python Tutorial for Beginners - Learn Python in 5 Hours [FULL COURSE]
+            </p>
+            
+            <p class="video-author">TechWorld with Nana
+            </p>
+            
+            <p class="video-stats">
+              4.5M views &#183; 2 years ago
+            </p>
+        </div>       
+      </div>      
+    </div>
+  </section>
+</main>
+
+
+</body>
+</html>
